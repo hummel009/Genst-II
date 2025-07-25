@@ -2,8 +2,8 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 plugins {
-	id("org.jetbrains.kotlin.jvm") version "2.1.21"
-	id("com.gtnewhorizons.retrofuturagradle") version "1.4.5"
+	id("org.jetbrains.kotlin.jvm") version "latest.release"
+	id("com.gtnewhorizons.retrofuturagradle") version "latest.release"
 }
 
 group = "com.github.hummel"
@@ -12,7 +12,7 @@ version = LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 val embed: Configuration by configurations.creating
 
 dependencies {
-	embed("org.jetbrains.kotlin:kotlin-stdlib:2.1.21")
+	embed("org.jetbrains.kotlin:kotlin-stdlib:latest.release")
 	implementation(rfg.deobf(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar")))))
 }
 
