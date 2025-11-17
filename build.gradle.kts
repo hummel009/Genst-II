@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter
 
 plugins {
 	id("org.jetbrains.kotlin.jvm") version "latest.release"
-	id("com.gtnewhorizons.retrofuturagradle") version "latest.release"
+	id("com.gtnewhorizons.retrofuturagradle") version "1.4.9"
 }
 
 group = "com.github.hummel"
